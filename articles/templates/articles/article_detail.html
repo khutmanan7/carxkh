@@ -27,7 +27,9 @@
                 <div class="header-content post-container">
                     <a href="{% url 'home' %}" class="back-home">Back To Home</a>
                     <h2 class="header-title">{{ article.title }}</h2>
-                    <img src="{{ article.thumb0.url }}" alt="" class="header-img">
+                    <a href="{{ article.thumb0.url }}">
+                        <img src="{{ article.thumb0.url }}" alt="" class="header-img">
+                    </a>
                 </div>
             </section>
             <section class="post-content post-container">
